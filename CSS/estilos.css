@@ -1,0 +1,836 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+body{ 
+    background-color: rgb(240, 239, 233) ;
+    font-family: 'Mulish', sans-serif;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+header {
+    width: 100%;
+    height: 90px;
+    box-shadow: 5px 5px 10px rgb(160, 158, 158);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f6f0;
+    
+}
+
+.header__img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border-color: rgb(110, 106, 99);
+    margin-left: 20px;
+
+}
+nav{
+    width: 100%;
+}
+
+.nav ul  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    gap: 1rem;
+}
+
+.nav__item a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  
+}
+
+.main{
+    padding: 1rem;
+    background-color: rgb(226, 219, 208) ;
+    margin-top: 70px;
+    margin-bottom: 180px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    height: 80vh;
+}
+.main__h1{
+    font-size: 90px;
+    color: rgb(48, 48, 45);
+    margin: 0;
+    font-weight:500;
+}
+
+.main__h2{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: lighter;
+    color:rgb(48, 48, 45);
+}
+
+.main__p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(48, 48, 45);
+    font-size: 25px;
+}
+.img__inicio{
+   width: 40vw;
+   height: 70vh;
+   box-shadow: 5px 5px rgb(179, 176, 176);
+}
+.main__button{
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(71, 70, 68);
+    background-color: rgb(48, 48, 45);
+    border-radius: 10px;
+    width: 200px;
+    height:50px;
+    border-style: solid;
+    border-color:rgb(48, 48, 45) ;
+}
+
+.grid{ 
+    display: grid;
+    grid-template-columns: repeat(2,50%) ;
+    grid-template-rows: 100%;    
+    grid-template-areas: 
+        "ele1 ele2";
+    column-gap: 1rem;
+    gap: 0.5rem;
+    
+}
+.hijo1{
+    grid-area: ele1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.hijo1 a{
+    text-decoration: none;
+    color: rgb(226, 219, 208);
+}
+.hijo2{
+    grid-area: ele2;
+   align-self: center;
+   justify-self: center;
+   position: relative;
+}
+
+.main__clases{
+    color:rgb(48, 48, 45);
+    background-image:url(../images/fondo\ clases.png);
+    background-attachment:fixed;
+    height: 80vh;
+    margin-top: 0px;
+    margin-bottom: 200px;
+    padding: 170px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 5px 5px 10px rgb(160, 158, 158);
+}
+.main__clases h1{
+    font-weight:normal;
+
+}
+.boton__clases{
+    margin: 50px;
+    font-size: 20px;
+    color: rgb(71, 70, 68);
+    background-color:#f7eadf;
+    border-radius: 10px;
+    width: 200px;
+    height:50px;
+    border-style: solid;
+    border-color:rgb(48, 48, 45) ;
+}
+.boton__clases a{
+    color: rgb(71, 70, 68);
+    text-decoration: none;
+}
+img{
+    border-radius: 20px;
+} 
+
+.section__info{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows: 100px, 350px;
+    grid-template-areas: 
+    "e1 e2 e3"
+    "el1 el2 el3";
+    color: black;
+    background-color:#d5d5da;
+    padding: 70px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    gap: 20px;
+    column-gap: 40px;
+}
+.reloj{
+    grid-area: e1;
+    font-size: 50px;
+    align-self: center;
+    justify-self: center;
+}
+.info__reloj{
+    grid-area: el1;
+    font-size: 25px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-weight:inherit;
+}
+.chat{
+    grid-area: e2;
+    font-size: 50px;
+    align-self: center;
+    justify-self: center;
+}
+.info__chat{
+    grid-area: el2;
+    font-size: 25px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-weight:inherit;
+}
+.drive{
+    grid-area: e3;
+    font-size: 50px;
+    align-self: center;
+    justify-self: center;
+}
+.info__drive{
+    grid-area: el3;
+    font-size: 25px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-weight:inherit;
+} 
+
+.section__info__clases{
+    display: flex;
+    gap: 30px;
+    background-color:#d5d5da;
+    border-style:solid;
+    border-color: rgba(184, 184, 184, 0.979);
+    margin: 70px;
+    padding: 70px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    line-height: 40px;
+}
+.section__info__clases h2{
+    flex-direction: column;
+   
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-weight: lighter;
+}
+
+
+.div{
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px, 100px, 500px;
+    grid-template-areas: 
+         "t1 t1 t1 t1"
+         "t2 t2 t2 t2"
+         "m1 m2 m3 m4";
+}
+
+
+.mediums{
+    border-style: solid;
+    border-color: rgb(201, 180, 181);
+    margin: 40px;
+    border-radius: 20px;
+    background-image: url(../images/fondocontanctos.jpeg);
+    background-position: center;
+    background-attachment:local;
+    background-size: cover;
+    box-shadow: 5px 5px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    color: rgb(44, 44, 42);
+    padding-bottom: 20px;
+}
+.video{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.pregunta{
+    grid-area: t1;
+    font-size: 40px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    align-content: center;
+    text-align: center;
+}
+
+.p{
+    grid-area: t2;
+    font-size: 20px;
+    text-align: center;
+}
+.m1{
+    grid-area: m1;
+}
+.m2{
+    grid-area: m2;
+}
+.m3{
+    grid-area: m3;
+}
+.m4{
+    grid-area: m4;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to left, rgb(24, 23, 22),rgb(80, 79, 78));
+    color: rgb(225, 225, 235) ;
+    margin-top: 40px;
+    width: 100%;
+    height: 20vh;
+    padding: 30px;
+}
+ footer h2{
+     font-size: 50px;
+     font-weight:normal ;
+     margin-left: 30px;
+ }  
+
+footer img {
+    flex-direction: column;
+    align-content: flex-end;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+.wpp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    font-size: 25px;
+}
+
+footer a{
+    font-size: 20px;
+    color:  rgb(190, 199, 206);
+    margin: 1px;
+}
+
+.fondo{
+    background-image: url(../images/fondocontanctos.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.form{
+    width: 80vw;
+    background-color: #f8f6f0;
+    border-radius: 80px;
+    text-align: center;
+    padding: 100px;
+    box-shadow: 5px 5px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 150px;
+    justify-content: center;  
+    align-content: center;
+
+}
+.form div{
+    margin-top: 20px;
+    padding: 10px;
+}
+.form div h3{
+    padding-bottom: 10px;
+}
+.radio{
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.form button{
+    width: 100px;
+    height: 35px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    border-style: solid;
+    border-color:rgb(78, 73, 77) ;
+    margin: 30px;
+    background-image: linear-gradient(to left, rgb(172, 159, 159), rgb(241, 239, 238));
+}
+.limpiar {
+    width: 100px;
+    height: 35px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    border-style: solid;
+    border-color:rgb(78, 73, 77) ;
+    margin: 30px;
+    background-image: linear-gradient(to left, rgb(172, 159, 159), rgb(241, 239, 238));
+}
+
+
+.clases{
+    padding: 20px;
+    gap: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns:200px, 200px, 200px;
+    grid-template-rows: 100px, 200px;
+    grid-template-areas: 
+    "cl1 cl1 cl1"
+    "cl2 cl3 cl4";
+}
+.clases1{
+    grid-area: cl1;
+    font-weight: lighter;
+}
+.clases2{
+    grid-area: cl2;
+}
+.clases3{
+    grid-area: cl3;
+}
+.clases4{
+    grid-area: cl4;
+}
+.btn__clases{
+    margin-top: 30px;
+    font-size: 20px;
+    color: rgb(240, 239, 233);
+    background-color:rgb(160, 151, 158);
+    border-radius: 10px;
+    width: 200px;
+    height:50px;
+    border-style: solid;
+    border-color:rgb(78, 73, 77) ;
+}
+
+.clases__form{
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    
+}
+.clases__form h2{ 
+    font-weight: lighter;
+}
+.boton__clas{
+    margin-top: 30px;
+    font-size: 20px;
+    color: rgb(240, 239, 233);
+    background-color:rgb(240, 239, 233);
+    border-radius: 10px;
+    width: 200px;
+    height:50px;
+    border-style: solid;
+    border-color:rgb(78, 73, 77) ;
+}
+.boton__clas a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.nosotros{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+
+.profesor{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: 100px, 300px;
+    grid-template-areas: 
+    "p1 p1 p1"
+    "p2 p3 p4";
+    column-gap: 150px;
+    align-items: center;
+    justify-content: center;
+}
+.profesor h3{
+    font-weight: lighter;
+}
+.prof1{
+    grid-area: p1;
+    font-weight: lighter;
+    font-size: 45px;
+    margin-top: 90px;
+}
+.prof2{
+    grid-area: p2;
+    font-size: 20px;
+}
+.prof13{
+    grid-area: p3;
+    font-weight: 100px;
+    font-size: 20px;
+}
+.prof4{
+    grid-area: p4;
+    font-weight: 100px;
+    font-size: 20px;
+}
+
+.profesores img{
+    border-radius: 100%;
+    margin: 40px;
+    width: 200px;
+}
+
+.clases h2{
+    margin-bottom: 0px;
+    margin-top: 40px;
+    font-size: 40px;
+}
+.materiales h3{
+    text-align: center;
+}
+
+
+.header i{
+    display: none;
+}
+
+
+
+.main__materiales{
+    background-color: #cec8c2;
+    padding: 150px;
+    padding-bottom: 150px;
+    margin-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-weight:lighter;
+    gap: 50px;
+}
+.main__materiales h1{
+    font-size: 70px;
+    font-weight:400;
+}
+.main__materiales h2{
+    font-size: 35px;
+    font-weight: lighter;
+    font-style: italic;
+}
+.main__materiales h3{
+    font-size: 30px;
+    font-weight: lighter;
+}
+.compra{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding-top:15px;
+}
+
+
+.gridm{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 100px, 300px;
+    grid-template-areas: 
+    "hijom1 hijom1 hijom1"
+    "hijom2 hijom3 hijom4";
+    align-items: center;
+    justify-content: center;
+}
+.hijom1{
+    grid-area:hijom1;
+    font-size: 40px;
+    font-weight: lighter;
+}
+.hijom2{
+    grid-area:hijom2;
+}
+.hijom3{
+    grid-area: hijom3;
+}
+.hijom4{
+    grid-area: hijom4;
+}
+
+
+@media screen and (max-width:600px){
+   .nav{
+       display: none;
+   }
+   .header i{
+       display: flex;
+       margin-left: 20px;
+   }
+   .main{
+       padding: 0;
+       background-color: rgb(240, 239, 233) ;
+       margin-bottom: 30px;
+   }
+   .grid{
+       grid-template-columns: 100%;
+       grid-template-rows: 1fr;
+       align-items: center;
+       justify-items: center;
+   }
+   .mediums{
+       width: 300px;
+       justify-content: center;
+       margin-left: 100px;
+   }
+   .video{
+       width: 200px;
+   }
+   .img__inicio{
+       display: none;
+   }
+   .hijo1{
+       width: 100%;
+      justify-items: center;
+      text-align: center;
+   }
+   .hijo1 p{
+       font-size: 20px;
+   }
+   .main__button{
+       width: 100%;
+     }
+
+    .section__info{
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, 200px);
+        grid-template-areas: 
+        "e1 el1"
+        "e2 el2"
+        "e3 el3";
+        color: black;
+        background-color: rgba(223, 223, 223, 0.979);
+        padding: 10px;
+        margin-top: 70px;
+        margin-bottom: 120px;
+        gap: 0px;
+        column-gap: 0px;
+        text-align: left;
+        align-content: center;
+        justify-content: center;
+    }
+    .section__info h2{
+        width: 100%;
+        text-align: left;
+        font-size: 20px;
+        display: flex;
+        align-items:center;
+    }
+    
+    .div{
+        text-align: center;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 80px, 80px, 400px, 400px, 400px, 400px;
+        grid-template-areas: 
+             "t1"
+             "t2"
+             "m1"
+             "m2"
+             "m3"
+             "m4";
+    }
+    footer{
+        flex-direction: column;
+        gap: 1rem;
+        background-image: linear-gradient(to left, rgb(24, 23, 22),rgb(80, 79, 78));
+        height: 40vh;
+        width: 100%;
+    }
+    footer h2{
+        font-size: 30px;
+    }
+    .wpp{
+        font-size: 15px;
+    }
+    footer img{
+        width: 40px;
+        height: 40px;
+    }
+    .main__materiales h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .main__materiales h2{
+        font-size: 20px;
+        text-align: center54;
+    }
+    .gridm{
+        text-align: center;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 80px, 400px, 400px, 400px;
+        grid-template-areas: 
+             "hijom1"
+             "hijom2"
+             "hijom3"
+             "hijom4";
+    }
+    .hijom1{
+        font-size: 25px;
+    }
+    .hijom2 a{
+        font-size: 20px;
+    }
+    .hijom3 a{
+        font-size: 20px;
+    }
+    .hijom4 a{
+        font-size: 20px;
+    }
+    .main__clases{
+        font-size: 20px;
+        height: 60vh;
+        padding: 80px;
+        margin: 0%;
+    }
+    .section__info__clases{
+        font-size: 15px;
+        margin: 0;
+        margin-top: 110px;
+        margin-bottom: 100px;
+        padding: 40px;
+    }
+    .section__info__clases h2{
+        font-size: 25px;
+        margin-bottom: 20px; 
+    }
+    .clases{
+        text-align: center;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 80px, 400px, 400px, 400px;
+        grid-template-areas: 
+             "cl1"
+             "cl2"
+             "cl3"
+             "cl4";
+    }
+    .clases__form{
+        font-size: 20px;
+        margin: 20px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .main__materiales{
+        padding: 80px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .profesor{
+        text-align: center;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 80px, 300px, 300px, 300px;
+        grid-template-areas: 
+             "p1"
+             "p2"
+             "p3"
+             "p4";
+    }
+    .profesores img{
+        margin-top: 50px;
+        width: 150px;
+    }
+    .form{
+        margin: 50px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 15px;
+    }
+    .radio{
+        flex-direction: column;
+        
+        margin-left: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .form div h3{
+        margin-bottom: 10px;
+    }
+    .form button{
+        width: 80px;
+        height: 25px;
+        font-size: 15px;
+        
+    }
+    .limpiar {
+        width: 80px;
+        height: 25px;
+        font-size: 15px;
+    }
+}

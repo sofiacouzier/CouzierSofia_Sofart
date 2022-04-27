@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto-sofart</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<script src="https://kit.fontawesome.com/f4a951d2bc.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body class="fondo">
+    <header class="header">
+        <img class="header__img" src="../images/istockphoto-1139359705-612x612.jpg" alt="logo" >
+        <i class="fas fa-bars"></i>
+         <nav class="nav">
+             <ul>
+                 <li class="nav__item"> <a href="../index.html">inicio</a> </li>
+                 <li class="nav__item"> <a href="clases.html">clases</a> </li>
+                 <li class="nav__item"> <a href="materiales.html">materiales</a> </li>
+                 <li class="nav__item"> <a href="nosotros.html">nosotros</a> </li>
+                 <li class="nav__item"> <a href="contacto.html">contacto</a> </li>
+             </ul>
+        </nav>
+    </header>
+    <main class="form">
+         <section>
+          <h1>Llena el formulario para contactarte con nosotros y recibir noticias!</h1>
+         </section>
+   
+
+    <form action="">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre...">
+        </div>
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" placeholder="Ingrese su edad...">
+        </div>
+        <div>
+            <label for="mail">Correo electronico:</label>
+            <input type="text" id="mail" name="mail" placeholder="Ingrese su correo...">
+        </div>
+        <div>
+            <h3 >Que clases te interesan?</h3>
+         </div>
+
+         <div class="radio">
+             <div>
+                 <label for="oleo">pintura con oleo</label>
+                  <input type="checkbox" name="oleo" id="oleo"></div>
+             <div>
+                  <label for="acrilico">pintura con acrilico</label>
+                 <input type="checkbox" name="acrilico" id="acrilico">
+             </div>
+             <div>
+                <label for="acuarela">pintura con acuarela</label>
+                <input type="checkbox" name="acuarela" id="acuarela">
+             </div>
+             <div>
+                <label for="ceramica">ceramica</label>
+                <input type="checkbox" name="ceramica" id="ceramica">
+             </div>
+         </div>
+ 
+        <div>
+            <label for="info"> <h3>Que tipo de informacion estas buscando?</h3></label>
+            <select name="info" id="info">
+                <option value="precios">precios</option>
+                <option value="inscripciones">inscripciones</option>
+                <option value="otro">otro</option>
+            </select>
+        </div>
+        <div>
+            <label for="comentario"><h3>Dejanos un comentario y ayudanos a mejorar:</h3> </label>
+            <textarea name="comentario" id="comentario" cols="30" rows="1"></textarea>
+        </div>
+
+        <div>
+            <button>Enviar</button>
+            <input class="limpiar" type="reset" value="limpiar">
+        </div>
+    
+
+    </form>
+ </main>
+   
+ <footer > 
+    <h2>conocenos mas:</h2>
+    <a class="wpp" target="_blank" href="https://www.instagram.com"></i> <i class="fab fa-instagram "></i>instagram</a>
+    <a  class="wpp" target="_blank" href="https://www.whatsapp.com/?lang=es"> </i><i class="fab fa-whatsapp" ></i>whatsapp</a>
+    <img  src="../images/istockphoto-1139359705-612x612.jpg" alt="logo" >
+</footer>
+
+</body>
+</html>

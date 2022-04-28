@@ -5,10 +5,10 @@
 }
  
 body{ 
-    background-color: rgb(240, 239, 233)  ;
+    background-color: red ;
     font-family: 'Mulish', sans-serif;
 }
-ul{
+ul{ 
     list-style: none;
     padding: 0;
 }

@@ -5,7 +5,7 @@
 }
  
 body{ 
-    background-color: red ;
+    background-color:rgb(240, 239, 233);
     font-family: 'Mulish', sans-serif;
 }
 ul{ 
@@ -95,8 +95,45 @@ nav{
 .img__inicio{
    width: 40vw;
    height: 70vh;
-   box-shadow: 5px 5px rgb(179, 176, 176);
+   box-shadow: 5px 5px rgb(179, 176, 176);}
+   
+   .kenburns-top {
+	-webkit-animation: kenburns-top 5s ease-out both;
+	        animation: kenburns-top 5s ease-out both;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse ;
 }
+
+ @-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.05) translateY(-15px);
+              transform: scale(1.05) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  @keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.05) translateY(-15px);
+              transform: scale(1.05) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  
+
 .main__button{
     margin-top: 20px;
     font-size: 20px;
@@ -419,7 +456,32 @@ footer a{
     border-style: solid;
     border-color:rgb(78, 73, 77) ;
     margin: 30px;
-    background-image: linear-gradient(to left, rgb(172, 159, 159), rgb(241, 239, 238));
+    background-image: linear-gradient(to left, rgb(148, 140, 140), rgb(241, 239, 238));
+    
+}
+.limpiar:hover{
+    background-image: linear-gradient(to left, rgb(241, 239, 238), rgb(148, 140, 140));
+    animation-name: formulario;
+    animation-duration: 1s;
+    background-size:400%,100% ;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite ;
+}
+.form button:hover{
+    background-image: linear-gradient(to left, rgb(241, 239, 238), rgb(148, 140, 140));
+    animation-name: formulario;
+    animation-duration: 1s;
+    background-size:400%,100% ;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite ;
+}
+@keyframes formulario{
+    0%{
+        background-position: 50%,50%;
+    }
+    100%{
+        background-position: 100%,0%;
+    }
 }
 
 
@@ -459,7 +521,36 @@ footer a{
     border-style: solid;
     border-color:rgb(78, 73, 77) ;
 }
+.transiciones:hover button{
+    animation-name: transicion;
+    animation-duration: 1s;
+}
+.compra:hover{
+    animation-name: transicion;
+    animation-duration: 1s;
+}
+.mediums:hover{
+    animation-name: t;
+    animation-duration: 1s;
+}
+@keyframes t{
+    0%{
+        transform:scale(1);
+    }
+    100%{
+        transform:scale(1.1);
+    }
+}
+@keyframes transicion{
+    0%{
+        transform:scale(1);
+    }
+    100%{
+        transform:scale(1.3);
+    }
+    
 
+}
 .clases__form{
     font-weight: lighter;
     font-size: 30px;
@@ -476,7 +567,7 @@ footer a{
 .boton__clas{
     margin-top: 30px;
     font-size: 20px;
-    color: rgb(240, 239, 233);
+    color: black;
     background-color:rgb(240, 239, 233);
     border-radius: 10px;
     width: 200px;
@@ -484,12 +575,33 @@ footer a{
     border-style: solid;
     border-color:rgb(78, 73, 77) ;
 }
-.boton__clas a{
-    text-decoration: none;
-    color: black;
+
+.boton__clas:hover {
+    animation-duration:2s ;
+    animation-name: llenar;
 
 }
-
+.boton__clas a{
+    color: black;
+    text-decoration: none;
+}
+.boton__clas:hover a{
+    animation-duration:1s ;
+    animation-name: llenar;
+    animation-delay: 1s;
+    
+}
+@keyframes llenar{
+    form{
+        background-color:rgb(240, 239, 233) ;
+        color: black;
+    }
+    to{
+        background-color:black ;
+        color: rgb(240, 239, 233) ;
+        
+    }
+}
 .nosotros{
     text-align: center;
     margin-bottom: 20px;

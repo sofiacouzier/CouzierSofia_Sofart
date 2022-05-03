@@ -42,16 +42,6 @@ header {
 }
 
 
-/* .nav-item a{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-
-} */
 
 
 
@@ -65,7 +55,7 @@ header {
     border-radius: 10px;
     height: 80vh;
 }
-.main__h1{
+/* .main__h1{
     font-size: 90px;
     color: rgb(48, 48, 45);
     margin: 0;
@@ -84,7 +74,7 @@ header {
     margin-bottom: 30px;
     color: rgb(48, 48, 45);
     font-size: 25px;
-}
+/* } */
 .img__inicio{
    width: 40vw;
    height: 70vh;
@@ -129,17 +119,17 @@ header {
 
 .main__button{
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(71, 70, 68);
-    background-color: rgb(48, 48, 45);
+    background-color: rgb(34, 34, 31);
     border-radius: 10px;
     width: 200px;
-    height:50px;
+    height:45px;
     border-style: solid;
     border-color:rgb(48, 48, 45) ;
 }
 
-.grid{ 
+/* .grid{ 
     display: grid;
     grid-template-columns: repeat(2,50%) ;
     grid-template-rows: 100%;    
@@ -167,7 +157,7 @@ header {
    align-self: center;
    justify-self: center;
    position: relative;
-}
+} */
 
 .main__clases{
     color:rgb(48, 48, 45);
@@ -178,12 +168,12 @@ header {
     margin-bottom: 200px;
     padding: 170px;
     text-align: center;
-    font-size: 35px;
+
     box-shadow: 5px 5px 10px rgb(160, 158, 158);
 }
 .main__clases h1{
     font-weight:normal;
-
+    font-size: 20px;
 }
 .boton__clases{
     margin: 50px;
@@ -285,24 +275,12 @@ img{
 }
 
 
-.div{
-    text-align: center;
-    width: 100%;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 100px, 100px, 500px;
-    grid-template-areas: 
-         "t1 t1 t1 t1"
-         "t2 t2 t2 t2"
-         "m1 m2 m3 m4";
-}
 
 
 .mediums{
     border-style: solid;
     border-color: rgb(201, 180, 181);
-    margin: 40px;
+    margin: 30px;
     border-radius: 20px;
     background-image: url(../images/fondocontanctos.jpeg);
     background-position: center;
@@ -323,7 +301,7 @@ img{
     border-radius: 20px;
     padding: 10px;
 }
-
+/* 
 .pregunta{
     grid-area: t1;
     font-size: 40px;
@@ -349,7 +327,7 @@ img{
 }
 .m4{
     grid-area: m4;
-}
+} */
 footer{
     display: flex;
     align-items: center;

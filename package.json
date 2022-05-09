@@ -1,0 +1,19 @@
+{
+  "name": "sofart-couzier",
+  "version": "1.0.0",
+  "description": "probando sass",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass estilo.scss ./CSS/estilos.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sofiacouzier/mi_repositorio.git"
+  },
+  "author": "sofia couzier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sofiacouzier/mi_repositorio/issues"
+  },
+  "homepage": "https://github.com/sofiacouzier/mi_repositorio#readme"
+}

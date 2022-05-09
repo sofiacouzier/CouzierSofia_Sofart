@@ -1,0 +1,70 @@
+.fondo{
+    background-image: url(../images/fondocontanctos.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.form{
+    width: 80vw;
+    background-color: #f8f6f0;
+    border-radius: 80px;
+    text-align: center;
+    box-shadow: 5px 5px gray;
+    margin: 150px;
+   div{
+    padding: 20px;
+    padding-top: 30px
+}
+button{
+    width: 100px;
+    height: 35px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    border-style: solid;
+    border-color:rgb(78, 73, 77) ;
+    margin: 30px;
+    background-image: linear-gradient(to left, rgb(172, 159, 159), rgb(241, 239, 238));
+}
+
+}
+.limpiar {
+    width: 100px;
+    height: 35px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    border-style: solid;
+    border-color:rgb(78, 73, 77) ;
+    margin: 30px;
+    background-image: linear-gradient(to left, rgb(148, 140, 140), rgb(241, 239, 238));
+    
+}
+
+.limpiar:hover{
+    background-image: linear-gradient(to left, rgb(241, 239, 238), rgb(148, 140, 140));
+    animation-name: formulario;
+    animation-duration: 1s;
+    background-size:400%,100% ;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite ;
+}
+.form button:hover{
+    background-image: linear-gradient(to left, rgb(241, 239, 238), rgb(148, 140, 140));
+    animation-name: formulario;
+    animation-duration: 1s;
+    background-size:400%,100% ;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite ;
+}
+@keyframes formulario{
+    0%{
+        background-position: 50%,50%;
+    }
+    100%{
+        background-position: 100%,0%;
+    }
+}

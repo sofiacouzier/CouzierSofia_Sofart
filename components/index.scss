@@ -1,0 +1,149 @@
+.main{
+    padding: 1rem;
+    background-color: rgb(226, 219, 208) ;
+    margin-top: 70px;
+    margin-bottom: 180px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    height: 80vh;
+    &__button{
+            margin-top: 20px;
+            font-size: 25px;
+            color: rgb(71, 70, 68);
+            background-color: rgb(34, 34, 31);
+            border-radius: 10px;
+            width: 200px;
+            height:45px;
+            border-style: solid;
+            border-color:rgb(48, 48, 45) ;
+    }
+}
+
+.img__inicio{
+    width: 40vw;
+    height: 70vh;
+    box-shadow: 5px 5px rgb(179, 176, 176);}
+    
+.kenburns-top{
+    -webkit-animation: kenburns-top 5s ease-out both;
+             animation: kenburns-top 5s ease-out both;
+             animation-iteration-count: infinite;
+             animation-direction:alternate-reverse ;
+ }
+  @-webkit-keyframes kenburns-top {
+     0% {
+       -webkit-transform: scale(1) translateY(0);
+               transform: scale(1) translateY(0);
+       -webkit-transform-origin: 50% 16%;
+               transform-origin: 50% 16%;
+     }
+     100% {
+       -webkit-transform: scale(1.05) translateY(-15px);
+               transform: scale(1.05) translateY(-15px);
+       -webkit-transform-origin: top;
+               transform-origin: top;
+     }
+   }
+ @keyframes kenburns-top {
+     0% {
+       -webkit-transform: scale(1) translateY(0);
+               transform: scale(1) translateY(0);
+       -webkit-transform-origin: 50% 16%;
+               transform-origin: 50% 16%;
+     }
+     100% {
+       -webkit-transform: scale(1.05) translateY(-15px);
+               transform: scale(1.05) translateY(-15px);
+       -webkit-transform-origin: top;
+               transform-origin: top;
+     }
+   }
+    
+   .section__info{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows: 100px, 350px;
+    grid-template-areas: 
+    "e1 e2 e3"
+    "el1 el2 el3";
+    color: black;
+    background-color:#d5d5da;
+    padding: 70px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    gap: 20px;
+    column-gap: 40px;
+
+}
+.reloj{
+    grid-area: e1;
+    font-size: 50px;
+    align-self: center;
+    justify-self: center;
+     }
+   .info__reloj{
+    grid-area: el1;
+    font-size: 25px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+     font-weight:inherit;
+ }
+.chat{
+    grid-area: e2;
+    font-size: 50px;
+    align-self: center;
+    justify-self: center;
+   }
+.info__chat{
+    grid-area: el2;
+    font-size: 25px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-weight:inherit;
+ }
+.drive{
+    grid-area: e3;
+    font-size: 50px;
+    align-self: center;
+    justify-self: center;
+ }
+.info__drive{
+    grid-area: el3;
+    font-size: 25px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-weight:inherit;
+} 
+
+.mediums{
+    border-style: solid;
+    border-color: rgb(201, 180, 181);
+    margin: 30px;
+    border-radius: 20px;
+    background-image: url(../images/fondocontanctos.jpeg);
+    background-position: center;
+    background-attachment:local;
+    background-size: cover;
+    box-shadow: 5px 5px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    color: rgb(44, 44, 42);
+    padding-bottom: 20px;
+}
+.video{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.mediums:hover{
+    animation-name: t;
+    animation-duration: 1s;
+}

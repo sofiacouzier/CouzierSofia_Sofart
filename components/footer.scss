@@ -1,3 +1,4 @@
+
 footer{
     display: flex;
     align-items: center;
@@ -20,6 +21,19 @@ footer{
     width: 80px;
     height: 80px;
     }
+
+    $colors: (
+      ins: #c04faf,
+      wap:  #5cc382,
+      );
+      @each $name-color, $bgcolor in $colors {
+        .#{$name-color} {
+            color: $bgcolor;
+            font-size: 20px;
+        }
+     }
+     
+
     
    a{
     font-size: 20px;
@@ -36,3 +50,14 @@ footer{
     gap: 10px;
     font-size: 25px;
      }
+     .insta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        gap: 10px;
+        font-size: 25px;
+         }
+
+
+        

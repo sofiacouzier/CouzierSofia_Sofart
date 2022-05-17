@@ -1,3 +1,5 @@
+
+
 .main{
     padding: 1rem;
     background-color: rgb(226, 219, 208) ;
@@ -78,70 +80,40 @@
 }
 .reloj{
     grid-area: e1;
-    font-size: 50px;
-    align-self: center;
-    justify-self: center;
+    @extend .logotemplate;
      }
-   .info__reloj{
+.info__reloj{
     grid-area: el1;
-    font-size: 25px;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-     font-weight:inherit;
+    @extend .infotemplate;
  }
 .chat{
     grid-area: e2;
-    font-size: 50px;
-    align-self: center;
-    justify-self: center;
+    @extend .logotemplate;
    }
 .info__chat{
     grid-area: el2;
-    font-size: 25px;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    font-weight:inherit;
+    @extend .infotemplate;
+    
  }
 .drive{
     grid-area: e3;
-    font-size: 50px;
-    align-self: center;
-    justify-self: center;
+    @extend .logotemplate;
  }
 .info__drive{
     grid-area: el3;
-    font-size: 25px;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    font-weight:inherit;
+    @extend .infotemplate;
 } 
 
 .mediums{
-    border-style: solid;
-    border-color: rgb(201, 180, 181);
-    margin: 30px;
-    border-radius: 20px;
-    background-image: url(../images/fondocontanctos.jpeg);
-    background-position: center;
-    background-attachment:local;
-    background-size: cover;
-    box-shadow: 5px 5px grey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    gap: 10px;
-    color: rgb(44, 44, 42);
-    padding-bottom: 20px;
+    @include cardconteinter(25px, 'no');
+   
 }
 .video{
-    width: 250px;
-    height: 200px;
+    width: 230px;
+    height: 180px;
     border-radius: 20px;
     padding: 10px;
+    margin-top: 16px;
 }
 .mediums:hover{
     animation-name: t;

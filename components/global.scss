@@ -1,0 +1,49 @@
+.TitleTemplate{
+    background-color: #cec8c2;
+    padding: 150px;
+    padding-bottom: 150px;
+    margin-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-weight:lighter;
+    gap: 50px;
+}
+
+.infotemplate{
+    font-size: 25px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+     font-weight:inherit;
+}
+.logotemplate{
+    font-size: 50px;
+    align-self: center;
+    justify-self: center;
+}
+
+@mixin cardconteinter ($margin, $boxshadow) {
+    border-style: solid;
+    border-color: rgb(152, 138, 138);
+    margin:$margin;
+    border-radius: 20px;
+    background-image: url(../images/fondocontanctos.jpeg);
+    background-position: center;
+    background-attachment:local;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    color: rgb(44, 44, 42);
+    padding-bottom: 20px;
+    @if ($boxshadow == 'yes'){
+        border-color: rgb(201, 180, 181);
+         box-shadow: 5px 5px rgb(142, 139, 139);
+    }
+}
+

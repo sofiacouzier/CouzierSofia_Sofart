@@ -16,8 +16,6 @@ ul{
 }
 
 
-
-
 .main__clases{
     color:rgb(48, 48, 45);
     background-image:url(../images/fondo\ clases.png);
@@ -37,7 +35,7 @@ ul{
 .boton__clases{
     margin: 50px;
     font-size: 20px;
-    color: rgb(71, 70, 68);
+    color:$btncolor;
     background-color:#f7eadf;
     border-radius: 10px;
     width: 200px;
@@ -46,7 +44,7 @@ ul{
     border-color:rgb(48, 48, 45) ;
 }
 .boton__clases a{
-    color: rgb(71, 70, 68);
+    color: $btncolor;
     text-decoration: none;
 }
 img{
@@ -513,12 +511,11 @@ div .mediums{
     }
    
     .cl div{
-        justify-items: auto;
-        text-align: center;
-        padding: 20px;
+        justify-content: center;
+        margin-left: 16%;
        
-    
-    }
+       }
+
     .clases__form{
         font-size: 20px;
         margin: 20px;

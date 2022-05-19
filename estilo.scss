@@ -175,67 +175,67 @@ ul{
 
 
 @media screen and (max-width:600px){
-   
-   .main{
-       display: flex;
-       justify-content: center;
-       padding: 0;
-       background-color: $bgcolor ;
-      
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+   .header{
+       width: 100%;
    }
-   .grid{
-       grid-template-columns: 100%;
-       grid-template-rows: 1fr;
-       align-items: center;
-       justify-items: center;
-   }
-   .mediums{
-       width: 100px;
-   }
-   .video{
-       padding: 0;
-       margin: 10px;
-       margin-left: 0;
-       margin-right:0 ;
-   }
-   .img__inicio{
-       display: none;
-   }
+    .main{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        background-color: $bgcolor ;
+    }
    .h1{
-      
-       width: 300px;
-       display: flex;
-       justify-content: center;
-       padding: 0;
-       font-size: 50px;
-   }
-   .display-4{
-    width: 300px;
-       display: flex;
-       justify-content: center;
-       padding: 0;
-       font-size: 50px;
-       font-size: 20px;
-}
-
-.unop{
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    font-size: 50px;
-    font-size: 3px;
-}
-.main button {
-    width: 300px;
-       display: flex;
-       justify-content: center;
-     
-}
-div .mediums{
-    width: 1000px;
-}
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        font-size: 50px;
+        text-align: center;
+    }
+    .display-4{
+     width: 300px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        font-size: 50px;
+        font-size: 20px;
+ }
+ .mediums{
+    @include cardconteinter(95px, 'no');
    
+}
+ 
+    .video{
+        padding: 0;
+        margin: 10px;
+        margin-left: 0;
+        margin-right:0 ;
+    }
+    .img__inicio{
+        display: none;
+    }
+   
+ 
+ .unop{
+     width: 300px;
+     display: flex;
+     justify-content: center;
+     padding: 0;
+     font-size: 50px;
+     font-size: 3px;
+ }
+ .main button {
+     width: 300px;
+        display: flex;
+        justify-content: center;
+      
+ }
+
     .section__info{
         width: 100%;
         grid-template-columns: repeat(2, 50%);
@@ -255,6 +255,7 @@ div .mediums{
         align-content: center;
         justify-content: center;
     }
+
     .section__info h2{
         width: 100%;
         text-align: left;
@@ -281,7 +282,7 @@ div .mediums{
         flex-direction: column;
         gap: 1rem;
         background-image: linear-gradient(to left, rgb(24, 23, 22),rgb(80, 79, 78));
-        height: 40vh;
+        height: 50vh;
         width: 100%;
     }
     footer h2{
@@ -300,7 +301,15 @@ div .mediums{
     }
     .main__materiales h2{
         font-size: 20px;
-        text-align: center54;
+        text-align: center;
+    }
+    .main__nosotros h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .main__nosotros h2{
+        font-size: 20px;
+        text-align: center;
     }
     .gridm{
         
@@ -334,10 +343,12 @@ div .mediums{
     
     .main__clases{
         font-size: 20px;
-        height: 40vh;
+        height: 50vh;
         padding: 80px;
         margin: 0%;
+        width: 100%;
     }
+    
     .section__info__clases{
         font-size: 15px;
         margin: 0;
@@ -351,9 +362,11 @@ div .mediums{
     }
    
     .cl div{
+      display: flex;
+        width: 100vw;
+        margin: 0;
         justify-content: center;
-        margin-left: 16%;
-       
+        justify-items: center;
        }
 
     .clases__form{
@@ -363,6 +376,11 @@ div .mediums{
         margin-bottom: 80px;
     }
     .main__materiales{
+        padding: 80px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .main__nosotros{
         padding: 80px;
         padding-top: 100px;
         padding-bottom: 100px;
@@ -383,22 +401,30 @@ div .mediums{
         margin-top: 50px;
         width: 150px;
     }
+    .fondo{
+        background-color: $bgcolor;
+        background-image: none;
+    }
     .form{
-        margin: 50px;
+        border-radius: 0%;
+        box-shadow: none;
+        width: 100%;
+        background-color: #f8f6f0;
+        margin: 0px;
         align-items: center;
         justify-content: center;
         gap: 10px;
         font-size: 15px;
     }
-    .radio{
-        flex-direction: column;
-        
-        margin-left: 10px;
-        align-items: center;
-        justify-content: center;
+    .formulario{
+        font-weight: bolder;
     }
     .form div h3{
         margin-bottom: 10px;
+        font-weight:normal;
+    }.form div label{
+       
+        font-weight:lighter;
     }
     .form button{
         width: 80px;
@@ -413,9 +439,23 @@ div .mediums{
     }
     .main__clases h1{
         font-size: 30px;
+      width: 100%;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+    .main__clases button{
+    
         align-self: center;
         justify-content: center;
         text-align: center;
-        margin-left: 40px;
     }
 } 
+
+
+
+@media screen and (max-width:600px){
+
+}

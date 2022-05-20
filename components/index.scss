@@ -7,7 +7,7 @@
     margin-bottom: 180px;
     margin-left: 4vw;
     margin-right: 30px;
- 
+    font-display:inherit ;
     border-radius: 10px;
     height: 80vh;
     & button{
@@ -38,6 +38,7 @@
    
     
    .section__info{
+    font-display:inherit ;
     display: grid;
     grid-template-columns:repeat(3, 1fr) ;
     grid-template-rows: 100px, 350px;
@@ -82,6 +83,7 @@
 .mediums{
     @include cardconteinter(25px, 'no');
    justify-items: center;
+   font-display:inherit ;
 }
 .video{
     width: 230px;

@@ -7,7 +7,7 @@
     margin-bottom: 200px;
     padding: 170px;
     text-align: center;
-
+    font-display:inherit ;
     box-shadow: 5px 5px 10px rgb(160, 158, 158);
 }
 .main__clases h1{
@@ -24,10 +24,12 @@
     height:50px;
     border-style: solid;
     border-color:rgb(48, 48, 45) ;
+    
 }
 .boton__clases a{
     color: $btncolor;
     text-decoration: none;
+    font-display:inherit ;
 }
 img{
     border-radius: 20px;
@@ -47,6 +49,7 @@ img{
     font-size: 25px;
     font-weight: lighter;
     line-height: 40px;
+    font-display:inherit ;
 }
 .section__info__clases h2{
     flex-direction: column;
@@ -63,13 +66,14 @@ img{
     gap: 10px;
     margin-bottom: 40px;
     text-align: center;
+    font-display:inherit ;
     
 }
 .hola{
     margin-left: 120px;
 }
 .clases1{
-    
+    font-display:inherit ;
     font-weight: lighter;
     text-align: center;
 }

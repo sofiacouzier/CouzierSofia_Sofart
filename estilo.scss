@@ -174,6 +174,8 @@ ul{
 }
 
 
+
+     
 @media screen and (max-width:600px){
     * {
         padding: 0;
@@ -238,7 +240,7 @@ ul{
         margin: 10px;
         margin-left: 0;
         margin-right:0;
-        
+       
     }
     .img__inicio{
         display: none;
@@ -479,7 +481,25 @@ ul{
     }
 } 
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:450px) {
+        
+    .mediums{
+     @include cardconteinter(80px, 'no');
+     display: flex;
+     justify-content: center;
+    padding: 0;
+ }
+    .video{
+     width: 180px;
+     padding: 0;
+     margin: 10px;
+     margin-left: 0;
+     margin-right:0;
+    }
+ 
+ }
+ 
+@media screen and (max-width:320px) {
    .main{
        display: grid;
        grid-template-columns: 90%;
@@ -542,7 +562,6 @@ ul{
         width: 200px;
         height:45px;
     }
-    
    }
    .mediums{
     @include cardconteinter(40px, 'no');
@@ -592,3 +611,4 @@ form{
     justify-content: center;
 }
 }
+
